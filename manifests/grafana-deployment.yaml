@@ -75,6 +75,48 @@ spec:
         - mountPath: /grafana-dashboard-definitions/0/statefulset
           name: grafana-dashboard-statefulset
           readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/application-drilldown-dashboard
+          name: application-drilldown-dashboard
+          readOnly: false      
+        - mountPath: /grafana-dashboard-definitions/0/aws-platform-dashboard
+          name: aws-platform-dashboard
+          readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/clouddriver-microservice-dashboard
+          name: clouddriver-microservice-dashboard
+          readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/echo-microservice-dashboard
+          name: echo-microservice-dashboard
+          readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/fiat-microservice-dashboard
+          name: fiat-microservice-dashboard
+          readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/front50-microservice-dashboard
+          name: front50-microservice-dashboard
+          readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/gate-microservice-dashboard
+          name: gate-microservice-dashboard
+          readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/google-platform-dashboard
+          name: google-platform-dashboard
+          readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/igor-microservice-dashboard
+          name: igor-microservice-dashboard
+          readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/kubernetes-platform-dashboard
+          name: kubernetes-platform-dashboard
+          readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/machine-dashboard
+          name: machine-dashboard
+          readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/minimal-spinnaker-dashboard
+          name: minimal-spinnaker-dashboard
+          readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/orca-microservice-dashboard
+          name: orca-microservice-dashboard
+          readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/rosco-microservice-dashboard
+          name: rosco-microservice-dashboard
+          readOnly: false
       nodeSelector:
         beta.kubernetes.io/os: linux
       securityContext:
@@ -123,3 +165,48 @@ spec:
       - configMap:
           name: grafana-dashboard-statefulset
         name: grafana-dashboard-statefulset
+      - configMap:
+          name: adapter-config
+        name: adapter-config
+      - configMap:
+          name: application-drilldown-dashboard
+        name: application-drilldown-dashboard
+      - configMap:
+          name: aws-platform-dashboard
+        name: aws-platform-dashboard
+      - configMap:
+          name: clouddriver-microservice-dashboard
+        name: clouddriver-microservice-dashboard
+      - configMap:
+          name: echo-microservice-dashboard
+        name: echo-microservice-dashboard
+      - configMap:
+          name: fiat-microservice-dashboard
+        name: fiat-microservice-dashboard
+      - configMap:
+          name: front50-microservice-dashboard
+        name: front50-microservice-dashboard
+      - configMap:
+          name: gate-microservice-dashboard
+        name: gate-microservice-dashboard
+      - configMap:
+          name: google-platform-dashboard
+        name: google-platform-dashboard
+      - configMap:
+          name: igor-microservice-dashboard
+        name: igor-microservice-dashboard
+      - configMap:
+          name: kubernetes-platform-dashboard
+        name: kubernetes-platform-dashboard
+      - configMap:
+          name: machine-dashboard
+        name: machine-dashboard
+      - configMap:
+          name: minimal-spinnaker-dashboard
+        name: minimal-spinnaker-dashboard
+      - configMap:
+          name: orca-microservice-dashboard
+        name: orca-microservice-dashboard
+      - configMap:
+          name: rosco-microservice-dashboard
+        name: rosco-microservice-dashboard
